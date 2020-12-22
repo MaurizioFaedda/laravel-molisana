@@ -1,4 +1,7 @@
 <header>
+    <div class="logo">
+        <img src="{{asset('images/marchio-la-molisana.png')}}" alt="">
+    </div>
     <ul>
         <li>
             <a href="{{url('/')}}">Home</a>
