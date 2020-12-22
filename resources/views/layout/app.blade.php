@@ -2,9 +2,17 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>@yield('title')</title>
     </head>
     <body>
-        @yield('content')
+
+        @include('partials.header')
+
+        <main>
+            @yield('content')
+        </main>
+
+        @include('partials.footer')
+
     </body>
 </html>
