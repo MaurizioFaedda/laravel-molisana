@@ -1,0 +1,25 @@
+.section-prodotti{
+    .cards-box{
+        padding: $main_font*2 0;
+        h1{
+            text-transform: capitalize;
+            color: $prod_color;
+            font-weight: lighter;
+            padding-left: 5px;
+
+        }
+        .card-box-type{
+            display: flex;
+            flex-wrap: wrap;
+            .card{
+                width: calc(100%/3);
+                padding: 5px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}

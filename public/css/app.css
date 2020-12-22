@@ -6,10 +6,12 @@
 
 .container {
   width: 1178px;
+  margin: auto;
 }
 
 header {
   text-align: center;
+  margin-top: 24px;
 }
 
 header ul {
@@ -26,5 +28,30 @@ header ul li a {
   color: #000;
   text-decoration: none;
   font-size: 24px;
+}
+
+.section-prodotti .cards-box {
+  padding: 48px 0;
+}
+
+.section-prodotti .cards-box h1 {
+  text-transform: capitalize;
+  color: #022d74;
+  font-weight: lighter;
+  padding-left: 5px;
+}
+
+.section-prodotti .cards-box .card-box-type {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-prodotti .cards-box .card-box-type .card {
+  width: calc(100%/3);
+  padding: 5px;
+}
+
+.section-prodotti .cards-box .card-box-type .card img {
+  width: 100%;
 }
 
