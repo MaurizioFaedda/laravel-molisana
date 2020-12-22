@@ -1,0 +1,29 @@
+footer{
+    padding-top: $main_font*2;
+    .container{
+        height: 500px;
+        .col{
+            width: calc(100%/3);
+            float: left;
+            h2{
+                text-transform: capitalize;
+                color: $ft_color;
+                padding: $main_font*0.3 0;
+            }
+            ul{
+                list-style: none;
+                li{
+                    color: $ft_color;
+                    padding: $main_font*0.2 0;
+                    a{
+                        color: $ft_color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .footer-background{
+        height: 130px;
+    }
+}

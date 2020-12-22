@@ -13,10 +13,12 @@
                     @foreach ($pasta as $value)
                         @if ($value['tipo'] === 'lunga')
                             <div class="card">
-                                <div class="img-pasta">
-                                    <img src="{{$value["src"]}}" alt="">
-                                </div>
-
+                                <img src="{{$value["src"]}}" alt="">
+                                <a href="#">
+                                    <div class="overlay">
+                                        <h1>{{$value['titolo']}}</h1>
+                                    </div>
+                                </a>
                             </div>
                         @endif
                     @endforeach
@@ -27,10 +29,12 @@
                     @foreach ($pasta as $value)
                         @if ($value['tipo'] === 'corta')
                             <div class="card">
-                                <div class="img-pasta">
-                                    <img src="{{$value["src"]}}" alt="">
-                                </div>
-
+                                <img src="{{$value["src"]}}" alt="">
+                                <a href="#">
+                                    <div class="overlay">
+                                        <h1>{{$value['titolo']}}</h1>
+                                    </div>
+                                </a>
                             </div>
                         @endif
                     @endforeach
@@ -41,10 +45,12 @@
                     @foreach ($pasta as $value)
                         @if ($value['tipo'] === 'cortissima')
                             <div class="card">
-                                <div class="img-pasta">
-                                    <img src="{{$value["src"]}}" alt="">
-                                </div>
-
+                                <img src="{{$value["src"]}}" alt="">
+                                <a href="#">
+                                    <div class="overlay">
+                                        <h1>{{$value['titolo']}}</h1>
+                                    </div>
+                                </a>
                             </div>
                         @endif
                     @endforeach

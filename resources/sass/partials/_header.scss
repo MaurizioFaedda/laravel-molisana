@@ -7,11 +7,15 @@ header{
         list-style-type: none;
         li{
             display: inline-block;
-            padding: $main_font;
+
+                &:hover, &:active{
+                background-color: $hov_color;
+                }
             a{
                 color: $main_color;
+                display: inline-block;
+                padding: $main_font;
                 text-decoration: none;
-                font-size: $main_font;
             }
         }
     }
