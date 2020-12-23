@@ -5,7 +5,7 @@
 @section('content')
     <div class="section-dettagli">
         <div class="text-titolo-pasta">
-            <h2>{{$pasta['titolo']}}</h2>
+            <h1>{{$pasta['titolo']}}</h1>
 
         </div>
         <div class="img-title-pasta">
@@ -14,6 +14,11 @@
         <div class="main-pasta">
             <img src="{{ $pasta['src-p'] }}" alt="{{ $pasta['titolo'] }}">
         </div>
+    </div>
+    <div class="info-section">
 
+        <div class="container">
+            <div class="descrizione">{!! $pasta['descrizione'] !!}</div>
+        </div>
     </div>
 @endsection

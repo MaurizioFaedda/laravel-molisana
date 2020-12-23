@@ -84,6 +84,7 @@ header ul li a {
 
 .section-prodotti .cards-box .card-box-type .card .overlay h2 {
   text-transform: uppercase;
+  color: #5f9afc;
 }
 
 .section-prodotti .cards-box .card-box-type .card:hover .overlay {
@@ -93,17 +94,14 @@ header ul li a {
 .section-dettagli {
   width: 100%;
   text-align: center;
-  position: relative;
 }
 
 .section-dettagli .text-titolo-pasta {
-  position: absolute;
-  left: 50%;
-  top: 28.8px;
-  transform: translate(-50%, -50%);
+  padding: 24px;
+  background-color: #b6dbe4;
 }
 
-.section-dettagli .text-titolo-pasta h2 {
+.section-dettagli .text-titolo-pasta h1 {
   color: #fff;
 }
 
@@ -113,9 +111,22 @@ header ul li a {
   width: 100%;
 }
 
+.info-section {
+  width: 100%;
+  background-color: #b6dbe4;
+  height: 300px;
+}
+
+.info-section .descrizione {
+  color: #022d74;
+}
+
+.info-section .descrizione li {
+  color: #022d74;
+}
+
 .home-section,
 .news-section {
-  height: 300px;
   text-align: center;
 }
 
