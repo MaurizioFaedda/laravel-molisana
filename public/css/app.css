@@ -57,22 +57,22 @@ header ul li a {
   position: relative;
   padding: 5px;
   transition: opacity 0.1s ease;
+  display: block;
 }
 
 .section-prodotti .cards-box .card-box-type .card img {
   max-width: 100%;
+  display: block;
 }
 
 .section-prodotti .cards-box .card-box-type .card .overlay {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
-  left: 50%;
-  top: 50%;
-  width: 80%;
-  height: 80%;
-  transform: translate(-50%, -50%);
-  border-radius: 4%;
+  left: 5;
+  top: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   transition: opacity 1s ease;
   display: flex;
   justify-content: center;
