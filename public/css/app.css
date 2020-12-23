@@ -41,9 +41,9 @@ header ul li a {
 }
 
 .section-prodotti .cards-box h1 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #022d74;
-  font-weight: lighter;
+  font-weight: bolder;
   padding-left: 5px;
 }
 
@@ -63,13 +63,15 @@ header ul li a {
 .section-prodotti .cards-box .card-box-type .card img {
   max-width: 100%;
   display: block;
+  border-radius: 4px;
 }
 
 .section-prodotti .cards-box .card-box-type .card .overlay {
+  border-radius: 4px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
-  left: 5;
+  left: 5px;
   top: 5px;
   width: calc(100% - 10px);
   height: calc(100% - 10px);
@@ -80,8 +82,35 @@ header ul li a {
   text-align: center;
 }
 
+.section-prodotti .cards-box .card-box-type .card .overlay h2 {
+  text-transform: uppercase;
+}
+
 .section-prodotti .cards-box .card-box-type .card:hover .overlay {
   opacity: 1;
+}
+
+.section-dettagli {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.section-dettagli .text-titolo-pasta {
+  position: absolute;
+  left: 50%;
+  top: 28.8px;
+  transform: translate(-50%, -50%);
+}
+
+.section-dettagli .text-titolo-pasta h2 {
+  color: #fff;
+}
+
+.img-title-pasta img,
+.main-pasta img {
+  display: block;
+  width: 100%;
 }
 
 .home-section,
@@ -123,7 +152,8 @@ footer .container .col ul li a {
   text-decoration: none;
 }
 
-footer .footer-background {
-  height: 130px;
+footer .footer-background img {
+  display: block;
+  width: 100%;
 }
 

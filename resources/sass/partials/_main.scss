@@ -2,9 +2,9 @@
     .cards-box{
         padding: $main_font 0;
         h1{
-            text-transform: capitalize;
+            text-transform: uppercase;
             color: $prod_color;
-            font-weight: lighter;
+            font-weight: bolder;
             padding-left: 5px;
 
         }
@@ -23,21 +23,25 @@
                 img{
                     max-width: 100%;
                     display: block;
+                    border-radius: 4px;
                 }
                 .overlay{
+                    border-radius: 4px;
                     position: absolute;
                     background-color: rgba(255, 255, 255, 0.5);
                     opacity: 0;
-                    left: 5;
+                    left: 5px;
                     top: 5px;
                     width: calc(100% - 10px);
                     height: calc(100% - 10px);
-                    // transform: translate(-50%, -50%);
                     transition: opacity 1s ease;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    h2{
+                        text-transform: uppercase;
+                    }
 
 
                 }
@@ -49,6 +53,28 @@
         }
 
     }
+}
+
+.section-dettagli{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .text-titolo-pasta{
+        position: absolute;
+        left: 50%;
+        top: $main_font*1.2;
+        transform: translate(-50%, -50%);
+        h2{
+            color: #fff;
+        }
+
+    }
+
+}
+
+.img-title-pasta img, .main-pasta img{
+    display: block;
+    width: 100%;
 }
 
 .home-section, .news-section{

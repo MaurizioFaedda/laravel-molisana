@@ -88,7 +88,7 @@
             </ul>
         </div>
     </div>
-    <div class="footer-background" style="width:100;background-image: url({{asset('images/footer-images.jpg')}}); background-repeat: no-repeat;">
-
+    <div class="footer-background">
+        <img src="../images/footer-images.jpg" alt="">
     </div>
 </footer>

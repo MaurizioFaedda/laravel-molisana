@@ -18,8 +18,17 @@ Route::get('/', function () {
 });
 
 Route::get('/prodotti', function () {
+    $array_pasta = config('pasta');
+    $alls_pasta = collect($array_pasta);
+    $pasta_lunga = $alls_pasta->where('tipo', 'lunga');
+    $pasta_corta = $alls_pasta->where('tipo', 'corta');
+    $pasta_cortissima = $alls_pasta->where('tipo', 'cortissima');
     $data = [
-        'pasta' => config('pasta')
+        'pasta' => [
+            'lunga' => $pasta_lunga,
+            'corta' => $pasta_corta,
+            'cortissima' => $pasta_cortissima
+        ]
     ];
 
     return view('prodotti', $data);
