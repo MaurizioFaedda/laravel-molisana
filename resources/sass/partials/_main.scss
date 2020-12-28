@@ -80,8 +80,20 @@
 .info-section{
     width: 100%;
     background-color: $hov_color;
-    height: 300px;
+    padding: $main_font*3 0;
+
+    .infos-pasta{
+        display: flex;
+        justify-content: center;
+        padding: 0 0 $main_font*4 0;
+        h4{
+            padding: 0 $main_font;
+            color: $prod_color;
+        }
+    }
     .descrizione{
+        text-align: center;
+        padding: 0 $main_font*2;
         color: $prod_color;
         li{
             color: $prod_color;

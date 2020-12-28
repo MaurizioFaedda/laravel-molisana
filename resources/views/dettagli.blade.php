@@ -18,6 +18,10 @@
     <div class="info-section">
 
         <div class="container">
+            <div class="infos-pasta">
+                <h4>Peso: {{$pasta['peso']}}</h4>
+                <h4>Cottura: {{$pasta['cottura']}}</h4>
+            </div>
             <div class="descrizione">{!! $pasta['descrizione'] !!}</div>
         </div>
     </div>

@@ -114,10 +114,23 @@ header ul li a {
 .info-section {
   width: 100%;
   background-color: #b6dbe4;
-  height: 300px;
+  padding: 72px 0;
+}
+
+.info-section .infos-pasta {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 96px 0;
+}
+
+.info-section .infos-pasta h4 {
+  padding: 0 24px;
+  color: #022d74;
 }
 
 .info-section .descrizione {
+  text-align: center;
+  padding: 0 48px;
   color: #022d74;
 }
 
